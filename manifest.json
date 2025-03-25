@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Parsi Plus",
+  "version": "1.0",
+  "description": "Enhance Persian language support with RTL rendering and Vazirmatn font across multiple websites. Transform text direction, font, and alignment for a seamless Persian browsing experience.",
+  "permissions": [
+    "activeTab",
+    "https://chat.openai.com/*",
+    "https://gemini.google.com/*",
+    "https://claude.ai/*",
+    "https://www.deepseek.com/*",
+    "https://www.wikipedia.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*", 
+        "https://claude.ai/*",
+        "https://www.deepseek.com/*",
+        "https://www.wikipedia.org/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "vazirmatn.woff2"
+  ]
+}
