@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('Vazirmatn-Regular.woff2') format('woff2'),
+         url('Vazirmatn-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('Vazirmatn-Bold.woff2') format('woff2'),
+         url('Vazirmatn-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Force Vazirmatn font everywhere */
+* {
+    font-family: 'Vazirmatn', Arial, sans-serif !important;
+}
