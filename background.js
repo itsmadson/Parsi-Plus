@@ -1,4 +1,5 @@
-chrome.runtime.onInstalled.addListener(function() {
-    // Ensure default state is on
-    chrome.storage.sync.set({isParsiFontEnabled: true});
+chrome.runtime.onInstalled.addListener(function(details) {
+    if (details.reason === 'install' || details.reason === 'update') {
+        chrome.storage.sync.set({isParsiFontEnabled: true});
+    }
 });
