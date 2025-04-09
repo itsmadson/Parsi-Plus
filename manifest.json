@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Parsi Plus",
-  
   "version": "1.2",
   "description": "Force Persian language support with RTL and Vazirmatn font",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "host_permissions": [
     "https://chat.openai.com/*",
@@ -34,7 +34,7 @@
     {
       "matches": [
         "https://chat.openai.com/*",
-        "https://gemini.google.com/*", 
+        "https://gemini.google.com/*",
         "https://www.deepseek.com/*",
         "https://www.wikipedia.org/*"
       ],
